@@ -220,3 +220,32 @@
   </body>
 </html>
 
+<div id="globe-container">
+    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=A9ee5Joff_ZY_f35ALe-JrXUQyPM_i1OCuK0wh4A70Y"></script>
+</div>
+
+<style>
+    #globe-container {
+        display: flex;
+        justify-content: center;
+
+    }
+    #clstr_globe {
+        width: 300px;
+        height: 300px;
+    }
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            var globe = document.getElementById("clstr_globe");
+            if (globe) {
+                globe.classList.add("hidden"); 
+            }
+        }, 2000);
+    });
+</script>
+
+
